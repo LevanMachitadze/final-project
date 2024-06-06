@@ -1,13 +1,12 @@
 body {
   header {
+    background-color: $header-background;
     .header_container {
-      max-width: 1440px;
+      max-width: 1100px;
       height: 100px;
       margin: 0 auto;
-      background-color: var($main-background-color);
       @extend %flex;
       .header_content {
-        background-color: black;
         @extend %containerWidth;
 
         ul {
@@ -15,17 +14,16 @@ body {
           li {
             margin-left: 50px;
             a {
-              color: #ffffff;
+              color: $main-background-color;
             }
           }
         }
       }
     }
     .underline {
-      max-width: 1110px;
       width: 100%;
       margin: 0 auto;
-      background-color: #979797;
+      background-color: $underline-color;
       height: 1px;
     }
   }
