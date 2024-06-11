@@ -1,6 +1,7 @@
 @import './utils/_resets.scss';
 @import './utils/_variables.scss';
-@import './utils/extend';
 @import './utils/_fonts.scss';
+@import './utils/_mixin';
+@import './utils/_extend';
 @import './components/_header.scss';
 @import './components/main';

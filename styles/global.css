@@ -148,6 +148,14 @@ button {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "Noto Sans Georgian";
+  src: url("../../assets/fonts/NotoSansGeorgian-VariableFont_wdth,wght.ttf");
+}
+body {
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
 body main .section_one, body main, body header .header_container {
   display: flex;
   justify-content: center;
@@ -161,16 +169,20 @@ body header .header_container .header_content {
   width: 100%;
 }
 
-@font-face {
-  font-family: "Noto Sans Georgian";
-  src: url("../../assets/fonts/NotoSansGeorgian-VariableFont_wdth,wght.ttf");
-}
-body {
-  font-family: "Noto Sans Georgian", sans-serif;
-}
-
 body header {
   background-color: #000000;
+}
+@media only screen and (max-width: 720px) {
+  body header .header_left {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body header .header_left {
+    width: 60%;
+    justify-content: space-between;
+  }
 }
 body header .header_container {
   max-width: 1100px;
@@ -189,14 +201,19 @@ body header .header_container .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
 }
 body header .header_container .menu-btn {
+  display: none;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 80px;
   height: 80px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+@media only screen and (max-width: 720px) {
+  body header .header_container .menu-btn {
+    display: flex;
+  }
 }
 body header .header_container .menu-btn .menu-btn__burger {
   width: 50px;
@@ -223,11 +240,20 @@ body header .header_container .menu-btn .menu-btn__burger::after {
 body header .header_container .header_content ul {
   display: flex;
 }
+@media only screen and (max-width: 720px) {
+  body header .header_container .header_content ul {
+    display: none;
+  }
+}
 body header .header_container .header_content ul li {
   margin-left: 50px;
 }
 body header .header_container .header_content ul li a {
   color: #ffffff;
+}
+body header .header_container .header_content .cart a svg path:hover {
+  fill: #d87d4a;
+  transition: 250ms;
 }
 body header .underline {
   width: 100%;
@@ -236,17 +262,6 @@ body header .underline {
   height: 1px;
 }
 
-@media screen and (max-width: 750px) {
-  .menu-btn {
-    order: 1;
-  }
-  nav {
-    display: none;
-  }
-  .cart {
-    display: none;
-  }
-}
 body main .section_one {
   width: 100%;
   height: 630px;
@@ -259,9 +274,26 @@ body main .section_one .headphone_section {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 720px) {
+  body main .section_one .headphone_section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 body main .section_one .headphone_section .description {
+  z-index: 1;
   width: 50%;
   color: #ffffff;
+}
+@media only screen and (max-width: 720px) {
+  body main .section_one .headphone_section .description {
+    text-align: center;
+    font-size: 56px;
+    width: 60%;
+  }
 }
 body main .section_one .headphone_section .description h5 {
   font-size: 14px;
@@ -292,4 +324,13 @@ body main .section_one .headphone_section .headphone_img {
 body main .section_one .headphone_section .headphone_img img {
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 720px) {
+  body main .section_one .headphone_section .headphone_img img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=global.css.map */
