@@ -172,15 +172,15 @@ body header .header_container .header_content {
 body header {
   background-color: #000000;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body header .header_left {
     display: flex;
     align-items: center;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 426px) {
   body header .header_left {
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
   }
 }
@@ -210,7 +210,7 @@ body header .header_container .menu-btn {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body header .header_container .menu-btn {
     display: flex;
   }
@@ -240,7 +240,7 @@ body header .header_container .menu-btn .menu-btn__burger::after {
 body header .header_container .header_content ul {
   display: flex;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body header .header_container .header_content ul {
     display: none;
   }
@@ -262,6 +262,9 @@ body header .underline {
   height: 1px;
 }
 
+body main {
+  flex-direction: column;
+}
 body main .section_one {
   width: 100%;
   height: 630px;
@@ -274,7 +277,7 @@ body main .section_one .headphone_section {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body main .section_one .headphone_section {
     position: relative;
     display: flex;
@@ -288,21 +291,35 @@ body main .section_one .headphone_section .description {
   width: 50%;
   color: #ffffff;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body main .section_one .headphone_section .description {
     text-align: center;
-    font-size: 56px;
-    width: 60%;
+    width: 80%;
   }
 }
 body main .section_one .headphone_section .description h5 {
   font-size: 14px;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 770px) {
+  body main .section_one .headphone_section .description h5 {
+    font-size: 14px;
+  }
+}
 body main .section_one .headphone_section .description h2 {
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_one .headphone_section .description h2 {
+    font-size: 56px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body main .section_one .headphone_section .description h2 {
+    font-size: 36px;
+  }
 }
 body main .section_one .headphone_section .description p {
   font-size: 15px;
@@ -325,7 +342,7 @@ body main .section_one .headphone_section .headphone_img img {
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
   body main .section_one .headphone_section .headphone_img img {
     position: absolute;
     top: 0px;
@@ -333,4 +350,169 @@ body main .section_one .headphone_section .headphone_img img {
     z-index: 0;
     width: 100%;
   }
+}
+body main .section_two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 525px;
+  max-height: 1050px;
+}
+@media only screen and (max-width: 426px) {
+  body main .section_two {
+    height: 1050px;
+  }
+}
+body main .section_two .random_products {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (max-width: 426px) {
+  body main .section_two .random_products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+  }
+  body main .section_two .random_products .headphones {
+    height: 165px;
+  }
+  body main .section_two .random_products .speakers {
+    height: 165px;
+  }
+  body main .section_two .random_products .earphones {
+    height: 165px;
+  }
+}
+body main .section_two .random_products div {
+  background-color: rgb(241, 241, 241);
+  width: 30%;
+  height: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_two .random_products div {
+    width: 30%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body main .section_two .random_products div {
+    width: 80%;
+    height: 30%;
+  }
+}
+body main .section_two .random_products div .img_div img {
+  position: absolute;
+  bottom: 0%;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_two .random_products div .img_div img {
+    width: 105px;
+    height: 105px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body main .section_two .random_products div .img_div img {
+    bottom: 0%;
+  }
+}
+body main .section_two .random_products div .products_name {
+  height: 100%;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_two .random_products div h5 {
+    font-size: 15px;
+  }
+}
+body main .section_two .random_products div .shop {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body main .section_two .random_products div .shop div {
+  width: 10%;
+}
+body main .section_two .random_products div .shop_btn {
+  margin-right: 14px;
+  border: none;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_two .random_products div .shop_btn {
+    font-size: 13px;
+  }
+}
+body main .section_three {
+  width: 100%;
+}
+body main .section_three .comercial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_three .comercial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+body main .section_three .comercial .comercial_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body main .section_three .comercial .comercial_text .text_container {
+  width: 60%;
+  height: 50%;
+}
+body main .section_three .comercial .comercial_text .text_container h3 {
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+body main .section_three .comercial .comercial_text .text_container h3 span {
+  color: #d87d4a;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_three .comercial .comercial_text .text_container {
+    width: 100%;
+    text-align: center;
+  }
+}
+body main .section_three .comercial .comercial_img {
+  width: 50%;
+  height: 100%;
+}
+@media only screen and (max-width: 770px) {
+  body main .section_three .comercial .comercial_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 65px;
+  }
+}
+body main .section_three .comercial .comercial_img img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=global.css.map */

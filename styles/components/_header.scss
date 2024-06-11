@@ -6,9 +6,13 @@ body {
         align-items: center;
       }
       @include responsive(phone) {
-        width: 60%;
+        width: 70%;
         justify-content: space-between;
       }
+      // @include responsive(s-phone) {
+      //   width: 80%;
+      //   display: none;
+      // }
     }
     background-color: $header-background;
     .header_container {

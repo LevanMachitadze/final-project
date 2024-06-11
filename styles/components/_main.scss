@@ -1,6 +1,7 @@
 body {
   main {
     @extend %flex;
+    flex-direction: column;
     .section_one {
       @extend %flex;
 
@@ -27,17 +28,25 @@ body {
           color: $main-background-color;
           @include responsive(tablet) {
             text-align: center;
-            font-size: 56px;
-            width: 60%;
+            width: 80%;
           }
           h5 {
             font-size: 14px;
             margin-bottom: 24px;
+            @include responsive(tablet) {
+              font-size: 14px;
+            }
           }
           h2 {
             font-size: 56px;
             font-weight: bold;
             margin-bottom: 24px;
+            @include responsive(tablet) {
+              font-size: 56px;
+            }
+            @include responsive(phone) {
+              font-size: 36px;
+            }
           }
           p {
             font-size: 15px;
@@ -53,9 +62,6 @@ body {
               background-color: $button-background-hover;
             }
           }
-          @include responsive(Tablet) {
-            position: absolute;
-          }
         }
         .headphone_img {
           width: 50%;
@@ -69,6 +75,131 @@ body {
               z-index: 0;
               width: 100%;
             }
+          }
+        }
+      }
+    }
+    .section_two {
+      width: 100%;
+      @include flexDefoult(center, center, row);
+      height: 525px;
+      max-height: 1050px;
+      @include responsive(phone) {
+        height: 1050px;
+      }
+      .random_products {
+        width: 80%;
+        height: 50%;
+        @include flexDefoult(space-between, center, row);
+        @include responsive(phone) {
+          @include flexDefoult(space-between, center, column);
+          width: 100%;
+          height: 70%;
+          .headphones {
+            height: 165px;
+          }
+          .speakers {
+            height: 165px;
+          }
+          .earphones {
+            height: 165px;
+          }
+        }
+
+        div {
+          background-color: $second-section-background;
+          width: 30%;
+          height: 70%;
+          position: relative;
+          @include responsive(tablet) {
+            width: 30%;
+            height: 50%;
+          }
+          @include responsive(phone) {
+            width: 80%;
+            height: 30%;
+          }
+          .img_div {
+            img {
+              position: absolute;
+              bottom: 0%;
+              @include responsive(tablet) {
+                width: 105px;
+                height: 105px;
+              }
+              @include responsive(phone) {
+                bottom: 0%;
+              }
+            }
+          }
+          @include flexDefoult(center, center, column);
+          .products_name {
+            height: 100%;
+          }
+          h5 {
+            @include responsive(tablet) {
+              font-size: 15px;
+            }
+          }
+          .shop {
+            width: 100%;
+            height: 35px;
+            @include flexDefoult(center, center, row);
+            div {
+              width: 10%;
+            }
+          }
+          .shop_btn {
+            margin-right: 14px;
+            border: none;
+            @include responsive(tablet) {
+              font-size: 13px;
+
+              // margin: 17px 14px 0px 0px;
+            }
+          }
+        }
+      }
+    }
+    .section_three {
+      width: 100%;
+
+      .comercial {
+        @include flexDefoult(center, center, row);
+        @include responsive(tablet) {
+          @include flexDefoult(center, center, column-reverse);
+        }
+        .comercial_text {
+          width: 50%;
+          @include flexDefoult(center, center, row);
+          .text_container {
+            width: 60%;
+            height: 50%;
+            h3 {
+              font-size: 40px;
+              margin-bottom: 32px;
+              span {
+                color: $button-background;
+              }
+            }
+            @include responsive(tablet) {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+        .comercial_img {
+          width: 50%;
+          height: 100%;
+
+          @include responsive(tablet) {
+            width: 100%;
+            @include flexDefoult(center, center, row);
+            margin-bottom: 65px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
           }
         }
       }
