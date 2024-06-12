@@ -1,7 +1,7 @@
 body {
   main {
-    @extend %flex;
-    flex-direction: column;
+    @include flexDefoult(center, center, column);
+    width: 100%;
     .section_one {
       @extend %flex;
 
@@ -11,7 +11,7 @@ body {
 
       .headphone_section {
         max-width: 1100px;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -163,8 +163,9 @@ body {
     }
     .section_three {
       width: 100%;
-
+      @include flexDefoult(center, center, row);
       .comercial {
+        width: 80%;
         @include flexDefoult(center, center, row);
         @include responsive(tablet) {
           @include flexDefoult(center, center, column-reverse);
