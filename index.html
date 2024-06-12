@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./styles/global.css" />
 
     <title>Document</title>
@@ -82,7 +84,12 @@
           </div>
         </div>
       </section>
-      <section class="section_two">
+      <section
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        class="section_two"
+      >
         <div class="random_products">
           <div class="headphones">
             <div class="img_div">
@@ -170,7 +177,12 @@
           </div>
         </div>
       </section>
-      <section class="section_three">
+      <section
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        class="section_three"
+      >
         <div class="comercial">
           <div class="comercial_text">
             <div class="text_container">
@@ -272,6 +284,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
