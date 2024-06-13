@@ -83,8 +83,12 @@ body {
             display: none;
           }
           li {
+            cursor: pointer;
             margin-left: 50px;
             a {
+              &:hover {
+                color: $button-background;
+              }
               color: $main-background-color;
             }
           }
@@ -95,7 +99,6 @@ body {
               path {
                 &:hover {
                   fill: $button-background;
-                  transition: 250ms;
                 }
               }
             }

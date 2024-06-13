@@ -4,28 +4,132 @@ footer {
   background-color: $header-background;
   @include flexDefoult(center, center, row);
   .footer_container {
+    max-width: 1100px;
     width: 80%;
     height: 100%;
-
-    .orange_line {
-      width: 100px;
-      height: 4px;
-      background-color: $button-background;
-      margin-bottom: 70px;
+    .orange_container {
+      @include responsive(phone) {
+        width: 100%;
+        @include flexDefoult(center, center, row);
+      }
+      .orange_line {
+        width: 100px;
+        height: 4px;
+        background-color: $button-background;
+        margin-bottom: 70px;
+      }
     }
+
+    .responsive_logo {
+      display: none;
+      @include responsive(tablet) {
+        display: flex;
+      }
+      @include responsive(phone) {
+        justify-content: center;
+      }
+    }
+
     .footer_down {
       display: flex;
       height: 70%;
+      @include responsive(tablet) {
+        flex-direction: column-reverse;
+      }
+      @include responsive(phone) {
+        align-items: center;
+        text-align: center;
+      }
       .footer_left {
         width: 50%;
         color: $main-background-color;
         @include flexDefoult(space-between, flex-start, column);
+        .footer_logo {
+          @include responsive(tablet) {
+            display: none;
+          }
+        }
+        @include responsive(tablet) {
+          height: 60%;
+          width: 100%;
+        }
         .textcontent {
+          @include responsive(phone) {
+            margin-top: 46px;
+          }
+        }
+        .copyright {
+          width: 100%;
+          @include flexDefoult(space-between, center, row);
+          .responsive_icons {
+            display: none;
+            @include responsive(tablet) {
+              display: flex;
+              svg {
+                // cursor: pointer; არ ედება კურსორი
+                margin-left: 16px;
+                path {
+                  &:hover {
+                    fill: $button-background;
+                  }
+                }
+              }
+            }
+            @include responsive(phone) {
+              margin-top: 16px;
+            }
+          }
+          @include responsive(phone) {
+            flex-direction: column;
+          }
         }
       }
       .footer_right {
         width: 50%;
+        height: 70%;
+        @include flexDefoult(space-between, center, column);
+        @include responsive(tablet) {
+          width: 75%;
+          height: 30%;
+        }
+        .footer_nav {
+          width: 100%;
+
+          ul {
+            @include flexDefoult(space-between, center, row);
+            @include responsive(phone) {
+              flex-direction: column;
+              li {
+                margin-top: 16px;
+              }
+            }
+            li {
+              color: $main-background-color;
+              &:hover {
+                color: $button-background;
+              }
+            }
+          }
+        }
+        .media_icons {
+          width: 100%;
+          @include flexDefoult(end, center, row);
+          svg {
+            margin-left: 16px;
+            path {
+              &:hover {
+                fill: $button-background;
+              }
+            }
+          }
+          @include responsive(tablet) {
+            display: none;
+          }
+        }
       }
     }
+  }
+  @include responsive(phone) {
+    height: 650px;
   }
 }
