@@ -344,6 +344,7 @@ body main .section_one .headphone_section .description p {
 body main .section_one .headphone_section .description .headphone_btn {
   width: 160px;
   height: 48px;
+  border-radius: 8px;
   color: #ffffff;
   background-color: #d87d4a;
   cursor: pointer;
@@ -616,6 +617,60 @@ body .section_four .swiper_container .swiper .carousel-card h3 {
 body .section_four .swiper_container .swiper .carousel-card p {
   max-width: 380px;
   font-size: 24px;
+}
+body .section_five {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .section_five .big_sale {
+  max-width: 1100px;
+  width: 80%;
+}
+body .section_five .big_sale .sale_textcontent {
+  font-size: 48px;
+}
+body .section_five .big_sale .timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 48px;
+}
+body .section_five .big_sale .timer .days,
+body .section_five .big_sale .timer .hours,
+body .section_five .big_sale .timer .minutes,
+body .section_five .big_sale .timer .seconds {
+  width: 20%;
+  height: 200px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #101010;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .section_five .big_sale .timer .days #day,
+body .section_five .big_sale .timer .days #hour,
+body .section_five .big_sale .timer .days #minute,
+body .section_five .big_sale .timer .days #second,
+body .section_five .big_sale .timer .hours #day,
+body .section_five .big_sale .timer .hours #hour,
+body .section_five .big_sale .timer .hours #minute,
+body .section_five .big_sale .timer .hours #second,
+body .section_five .big_sale .timer .minutes #day,
+body .section_five .big_sale .timer .minutes #hour,
+body .section_five .big_sale .timer .minutes #minute,
+body .section_five .big_sale .timer .minutes #second,
+body .section_five .big_sale .timer .seconds #day,
+body .section_five .big_sale .timer .seconds #hour,
+body .section_five .big_sale .timer .seconds #minute,
+body .section_five .big_sale .timer .seconds #second {
+  font-size: 65px;
 }
 
 footer {

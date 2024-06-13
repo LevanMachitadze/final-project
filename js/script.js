@@ -46,3 +46,32 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
+const day = document.getElementById('day');
+const hour = document.getElementById('hour');
+const minute = document.getElementById('minute');
+const second = document.getElementById('second');
+
+let days = 25;
+let hours = 23;
+let minutes = 59;
+let seconds = 60;
+setInterval(function () {
+  seconds = seconds - 1;
+  if (seconds === 0) {
+    minutes = minutes - 1;
+    seconds = 60;
+  }
+  if (minutes === 0) {
+    hours = hours - 1;
+    minutes = 59;
+  }
+  if (hours === 0) {
+    days = days - 1;
+    hours = 23;
+  }
+  day.textContent = days;
+  hour.textContent = hours;
+  minute.textContent = minutes;
+  second.textContent = seconds;
+}, 1000);
