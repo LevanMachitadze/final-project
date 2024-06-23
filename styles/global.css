@@ -540,11 +540,11 @@ body main .section_three .comercial .comercial_img img {
   width: 100%;
   height: 100%;
 }
-body .section_four {
+body main .section_four {
   width: 100%;
   margin-top: 46px;
 }
-body .section_four .swiper_container {
+body main .section_four .swiper_container {
   max-width: 1100px;
   width: 80%;
   margin: 0 auto;
@@ -554,95 +554,95 @@ body .section_four .swiper_container {
   align-items: center;
   margin-bottom: 60px;
 }
-body .section_four .swiper_container .swiper-slide {
+body main .section_four .swiper_container .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .section_four .swiper_container .title {
+body main .section_four .swiper_container .title {
   width: 100%;
 }
-body .section_four .swiper_container .title h1 {
+body main .section_four .swiper_container .title h1 {
   font-size: 40px;
   color: var(--text-title-color);
   margin-bottom: 30px;
 }
-body .section_four .swiper_container .swiper {
+body main .section_four .swiper_container .swiper {
   width: 100%;
 }
-body .section_four .swiper_container .swiper .swiper-pagination {
+body main .section_four .swiper_container .swiper .swiper-pagination {
   margin-top: 100px;
 }
-body .section_four .swiper_container .swiper .swiper-button-next,
-body .section_four .swiper_container .swiper .swiper-button-prev {
+body main .section_four .swiper_container .swiper .swiper-button-next,
+body main .section_four .swiper_container .swiper .swiper-button-prev {
   color: transparent;
   background: none;
   margin: 16px 0px;
   top: 0;
 }
-body .section_four .swiper_container .swiper .swiper-button-next:after,
-body .section_four .swiper_container .swiper .swiper-button-prev:after {
+body main .section_four .swiper_container .swiper .swiper-button-next:after,
+body main .section_four .swiper_container .swiper .swiper-button-prev:after {
   content: none;
 }
-body .section_four .swiper_container .swiper .swiper-button-next {
+body main .section_four .swiper_container .swiper .swiper-button-next {
   right: 15px;
 }
-body .section_four .swiper_container .swiper .swiper-button-next .next-btn {
+body main .section_four .swiper_container .swiper .swiper-button-next .next-btn {
   width: 30px;
   height: 30px;
   cursor: pointer;
   color: var(--text-title-color);
 }
-body .section_four .swiper_container .swiper .swiper-button-prev {
+body main .section_four .swiper_container .swiper .swiper-button-prev {
   left: 15px;
 }
-body .section_four .swiper_container .swiper .swiper-button-prev .prev-btn {
+body main .section_four .swiper_container .swiper .swiper-button-prev .prev-btn {
   width: 30px;
   height: 30px;
   cursor: pointer;
   color: var(--text-title-color);
 }
-body .section_four .swiper_container .swiper .swiper-wrapper {
+body main .section_four .swiper_container .swiper .swiper-wrapper {
   width: 100%;
   margin: 0 auto;
   margin-top: 70px;
 }
-body .section_four .swiper_container .swiper .carousel-card .carousel-card-img {
+body main .section_four .swiper_container .swiper .carousel-card .carousel-card-img {
   max-width: 380px;
 }
-body .section_four .swiper_container .swiper .carousel-card h3 {
+body main .section_four .swiper_container .swiper .carousel-card h3 {
   max-width: 380px;
   font-size: 32px;
 }
-body .section_four .swiper_container .swiper .carousel-card p {
+body main .section_four .swiper_container .swiper .carousel-card p {
   max-width: 380px;
   font-size: 24px;
 }
-body .section_five {
+body main .section_five {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-body .section_five .big_sale {
+body main .section_five .big_sale {
   max-width: 1100px;
   width: 80%;
 }
-body .section_five .big_sale .sale_textcontent {
+body main .section_five .big_sale .sale_textcontent {
   font-size: 48px;
 }
-body .section_five .big_sale .timer {
+body main .section_five .big_sale .timer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-top: 48px;
 }
-body .section_five .big_sale .timer .days,
-body .section_five .big_sale .timer .hours,
-body .section_five .big_sale .timer .minutes,
-body .section_five .big_sale .timer .seconds {
+body main .section_five .big_sale .timer .days,
+body main .section_five .big_sale .timer .hours,
+body main .section_five .big_sale .timer .minutes,
+body main .section_five .big_sale .timer .seconds {
   width: 20%;
   height: 200px;
   border-radius: 20px;
@@ -654,23 +654,102 @@ body .section_five .big_sale .timer .seconds {
   align-items: center;
   flex-direction: column;
 }
-body .section_five .big_sale .timer .days #day,
-body .section_five .big_sale .timer .days #hour,
-body .section_five .big_sale .timer .days #minute,
-body .section_five .big_sale .timer .days #second,
-body .section_five .big_sale .timer .hours #day,
-body .section_five .big_sale .timer .hours #hour,
-body .section_five .big_sale .timer .hours #minute,
-body .section_five .big_sale .timer .hours #second,
-body .section_five .big_sale .timer .minutes #day,
-body .section_five .big_sale .timer .minutes #hour,
-body .section_five .big_sale .timer .minutes #minute,
-body .section_five .big_sale .timer .minutes #second,
-body .section_five .big_sale .timer .seconds #day,
-body .section_five .big_sale .timer .seconds #hour,
-body .section_five .big_sale .timer .seconds #minute,
-body .section_five .big_sale .timer .seconds #second {
+body main .section_five .big_sale .timer .days #day,
+body main .section_five .big_sale .timer .days #hour,
+body main .section_five .big_sale .timer .days #minute,
+body main .section_five .big_sale .timer .days #second,
+body main .section_five .big_sale .timer .hours #day,
+body main .section_five .big_sale .timer .hours #hour,
+body main .section_five .big_sale .timer .hours #minute,
+body main .section_five .big_sale .timer .hours #second,
+body main .section_five .big_sale .timer .minutes #day,
+body main .section_five .big_sale .timer .minutes #hour,
+body main .section_five .big_sale .timer .minutes #minute,
+body main .section_five .big_sale .timer .minutes #second,
+body main .section_five .big_sale .timer .seconds #day,
+body main .section_five .big_sale .timer .seconds #hour,
+body main .section_five .big_sale .timer .seconds #minute,
+body main .section_five .big_sale .timer .seconds #second {
   font-size: 65px;
+}
+body main #productList .product {
+  max-width: 1100px;
+}
+body main #productList .product .products_description {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+body main #productList .product .products_description h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+body main #productList .product .products_description p {
+  margin: 32px 0px;
+}
+body main #productList .product .products_description button {
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  color: #ffffff;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 980px) {
+  body main #productList .product .products_description {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+}
+body main #productList .product:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body main #productList .product:nth-child(odd) .products_description {
+  margin-left: 125px;
+}
+@media only screen and (max-width: 980px) {
+  body main #productList .product:nth-child(odd) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  body main #productList .product:nth-child(odd) .products_description {
+    margin: 100px 0px;
+  }
+}
+body main #productList .product:nth-child(even) {
+  display: flex;
+  flex-direction: row;
+}
+body main #productList .product:nth-child(even) .products_description {
+  margin-right: 125px;
+}
+@media only screen and (max-width: 980px) {
+  body main #productList .product:nth-child(even) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  body main #productList .product:nth-child(even) .products_description {
+    margin: 100px 0px;
+  }
+}
+body .page_moveing {
+  width: 100px;
+  margin: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .page_moveing button {
+  width: 32px;
+  height: 32px;
 }
 
 footer {

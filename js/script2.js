@@ -1,4 +1,4 @@
-const ProductList = document.getElementById('product-list');
+const ProductList = document.getElementById('productList');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
@@ -22,25 +22,33 @@ function displayProducts() {
   const end = start + limit;
   const productsToDisplay = products.slice(start, end);
   productsToDisplay.forEach((product) => {
+    const productsContent = document.createElement('div');
+    productsContent.classList.add('products_description');
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
+    const productImg = document.createElement('img');
+    productImg.src = product.img;
+    const imgDiv = document.createElement('div');
+    imgDiv.appendChild(productImg);
     const productName = document.createElement('h2');
     productName.textContent = product.name;
-    productDiv.appendChild(productName);
+    productsContent.appendChild(productName);
     const productType = document.createElement('h2');
     productType.textContent = product.type;
-    productDiv.appendChild(productType);
+    productsContent.appendChild(productType);
     const productDescription = document.createElement('p');
     productDescription.textContent = product.description;
-    productDiv.appendChild(productDescription);
+    productsContent.appendChild(productDescription);
     const productBtn = document.createElement('button');
-    productBtn.textContent = 'Viev More';
+    productBtn.textContent = 'See Products';
 
     productBtn.addEventListener('click', function () {
       vievMore(product.id);
     });
-    productDiv.appendChild(productBtn);
+    productsContent.appendChild(productBtn);
     ProductList.appendChild(productDiv);
+    productDiv.appendChild(productsContent);
+    productDiv.appendChild(imgDiv);
   });
 }
 
