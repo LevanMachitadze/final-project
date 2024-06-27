@@ -83,304 +83,306 @@ body {
         }
       }
     }
-    .section_two {
-      width: 100%;
-      @include flexDefoult(center, center, row);
-      height: 525px;
-      max-height: 1050px;
+  }
+
+  .section_two {
+    width: 100%;
+    @include flexDefoult(center, center, row);
+    height: 525px;
+    max-height: 1050px;
+    @include responsive(phone) {
+      height: 1050px;
+    }
+    .random_products {
+      max-width: 1100px;
+      width: 80%;
+      height: 50%;
+      @include flexDefoult(space-between, center, row);
       @include responsive(phone) {
-        height: 1050px;
-      }
-      .random_products {
-        max-width: 1100px;
-        width: 80%;
-        height: 50%;
-        @include flexDefoult(space-between, center, row);
-        @include responsive(phone) {
-          @include flexDefoult(space-between, center, column);
-          width: 100%;
-          height: 70%;
-          .headphones {
-            height: 165px;
-          }
-          .speakers {
-            height: 165px;
-          }
-          .earphones {
-            height: 165px;
-          }
+        @include flexDefoult(space-between, center, column);
+        width: 100%;
+        height: 70%;
+        .headphones {
+          height: 165px;
         }
+        .speakers {
+          height: 165px;
+        }
+        .earphones {
+          height: 165px;
+        }
+      }
 
-        div {
-          background-color: $second-section-background;
+      div {
+        background-color: $second-section-background;
+        width: 30%;
+        height: 70%;
+        position: relative;
+        @include responsive(tablet) {
           width: 30%;
-          height: 70%;
-          position: relative;
-          @include responsive(tablet) {
-            width: 30%;
-            height: 50%;
-          }
-          @include responsive(phone) {
-            width: 80%;
-            height: 30%;
-          }
-          .img_div {
-            img {
-              position: absolute;
-              bottom: 0%;
-              @include responsive(tablet) {
-                width: 105px;
-                height: 105px;
-              }
-              @include responsive(phone) {
-                bottom: 0%;
-              }
-            }
-          }
-          @include flexDefoult(center, center, column);
-          .products_name {
-            height: 100%;
-          }
-          h5 {
-            @include responsive(tablet) {
-              font-size: 15px;
-            }
-          }
-          .shop {
-            width: 100%;
-            height: 35px;
-            @include flexDefoult(center, center, row);
-            div {
-              width: 10%;
-            }
-          }
-          .shop_btn {
-            margin-right: 14px;
-            border: none;
-            @include responsive(tablet) {
-              font-size: 13px;
-
-              // margin: 17px 14px 0px 0px;
-            }
-          }
+          height: 50%;
         }
-      }
-    }
-    .section_three {
-      width: 100%;
-      @include flexDefoult(center, center, row);
-      .comercial {
-        max-width: 1100px;
-        width: 80%;
-        @include flexDefoult(center, center, row);
-        @include responsive(tablet) {
-          @include flexDefoult(center, center, column-reverse);
+        @include responsive(phone) {
+          width: 80%;
+          height: 30%;
         }
-        .comercial_text {
-          width: 50%;
-          @include flexDefoult(center, center, row);
-          .text_container {
-            width: 60%;
-            height: 50%;
-            h3 {
-              font-size: 40px;
-              margin-bottom: 32px;
-              span {
-                color: $button-background;
-              }
-            }
-            @include responsive(tablet) {
-              width: 100%;
-              text-align: center;
-            }
-          }
-        }
-        .comercial_img {
-          width: 50%;
-          height: 100%;
-
-          @include responsive(tablet) {
-            width: 100%;
-            @include flexDefoult(center, center, row);
-            margin-bottom: 65px;
-          }
+        .img_div {
           img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-    }
-    .section_four {
-      width: 100%;
-      margin-top: 46px;
-      .swiper_container {
-        max-width: 1100px;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 60px;
-        .swiper-slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .title {
-          width: 100%;
-          h1 {
-            font-size: 40px;
-            color: var(--text-title-color);
-            margin-bottom: 30px;
-          }
-        }
-
-        .swiper {
-          .swiper-pagination {
-            margin-top: 100px;
-          }
-          width: 100%;
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: transparent;
-            background: none;
-            margin: 16px 0px;
-            top: 0;
-            &:after {
-              content: none;
+            position: absolute;
+            bottom: 0%;
+            @include responsive(tablet) {
+              width: 105px;
+              height: 105px;
             }
-          }
-          .swiper-button-next {
-            right: 15px;
-            .next-btn {
-              width: 30px;
-              height: 30px;
-              cursor: pointer;
-              color: var(--text-title-color);
-            }
-          }
-          .swiper-button-prev {
-            left: 15px;
-            .prev-btn {
-              width: 30px;
-              height: 30px;
-              cursor: pointer;
-              color: var(--text-title-color);
-            }
-          }
-          .swiper-wrapper {
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 70px;
-          }
-          .carousel-card {
-            .carousel-card-img {
-              max-width: 380px;
-            }
-            h3 {
-              max-width: 380px;
-              font-size: 32px;
-            }
-            p {
-              max-width: 380px;
-              font-size: 24px;
+            @include responsive(phone) {
+              bottom: 0%;
             }
           }
         }
-      }
-    }
-    .section_five {
-      width: 100%;
-      @include flexDefoult(center, center, row);
-      .big_sale {
-        max-width: 1100px;
-        width: 80%;
-        .sale_textcontent {
-          font-size: 48px;
+        @include flexDefoult(center, center, column);
+        .products_name {
+          height: 100%;
         }
-        .timer {
-          @include flexDefoult(space-between, center, row);
-          margin-top: 48px;
-          .days,
-          .hours,
-          .minutes,
-          .seconds {
-            width: 20%;
-            height: 200px;
-            border-radius: 20px;
-            color: $main-background-color;
-            background-color: $frst-section-background;
-            text-align: center;
-            @include flexDefoult(center, center, column);
-            #day,
-            #hour,
-            #minute,
-            #second {
-              font-size: 65px;
-            }
-          }
-        }
-      }
-    }
-    #productList {
-      .product {
-        max-width: 1100px;
-
-        .products_description {
-          width: 40%;
-          @include flexDefoult(center, start, column);
-
-          h2 {
-            font-size: 40px;
-            font-weight: bold;
-          }
-          p {
-            margin: 32px 0px;
-          }
-          button {
-            width: 160px;
-            height: 48px;
-            background-color: $button-background;
-            color: $main-background-color;
-            border-radius: 5px;
-          }
+        h5 {
           @include responsive(tablet) {
-            width: 80%;
-            text-align: center;
-            align-items: center;
+            font-size: 15px;
           }
         }
-      }
-      .product:nth-child(odd) {
-        display: flex;
-        flex-direction: row-reverse;
-        .products_description {
-          margin-left: 125px;
-        }
-        @include responsive(tablet) {
-          @include flexDefoult(center, center, column-reverse);
-          .products_description {
-            margin: 100px 0px;
+        .shop {
+          width: 100%;
+          height: 35px;
+          @include flexDefoult(center, center, row);
+          div {
+            width: 10%;
           }
         }
-      }
-      .product:nth-child(even) {
-        display: flex;
-        flex-direction: row;
-        .products_description {
-          margin-right: 125px;
-        }
-        @include responsive(tablet) {
-          @include flexDefoult(center, center, column-reverse);
-          .products_description {
-            margin: 100px 0px;
+        .shop_btn {
+          margin-right: 14px;
+          border: none;
+          @include responsive(tablet) {
+            font-size: 13px;
+
+            // margin: 17px 14px 0px 0px;
           }
         }
       }
     }
   }
+  .section_three {
+    width: 100%;
+    @include flexDefoult(center, center, row);
+    .comercial {
+      max-width: 1100px;
+      width: 80%;
+      @include flexDefoult(center, center, row);
+      @include responsive(tablet) {
+        @include flexDefoult(center, center, column-reverse);
+      }
+      .comercial_text {
+        width: 50%;
+        @include flexDefoult(center, center, row);
+        .text_container {
+          width: 60%;
+          height: 50%;
+          h3 {
+            font-size: 40px;
+            margin-bottom: 32px;
+            span {
+              color: $button-background;
+            }
+          }
+          @include responsive(tablet) {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .comercial_img {
+        width: 50%;
+        height: 100%;
+
+        @include responsive(tablet) {
+          width: 100%;
+          @include flexDefoult(center, center, row);
+          margin-bottom: 65px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .section_four {
+    width: 100%;
+    margin-top: 46px;
+    .swiper_container {
+      max-width: 1100px;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        width: 100%;
+        h1 {
+          font-size: 40px;
+          color: var(--text-title-color);
+          margin-bottom: 30px;
+        }
+      }
+
+      .swiper {
+        .swiper-pagination {
+          margin-top: 100px;
+        }
+        width: 100%;
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: transparent;
+          background: none;
+          margin: 16px 0px;
+          top: 0;
+          &:after {
+            content: none;
+          }
+        }
+        .swiper-button-next {
+          right: 15px;
+          .next-btn {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            color: var(--text-title-color);
+          }
+        }
+        .swiper-button-prev {
+          left: 15px;
+          .prev-btn {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            color: var(--text-title-color);
+          }
+        }
+        .swiper-wrapper {
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 70px;
+        }
+        .carousel-card {
+          .carousel-card-img {
+            max-width: 380px;
+          }
+          h3 {
+            max-width: 380px;
+            font-size: 32px;
+          }
+          p {
+            max-width: 380px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .section_five {
+    width: 100%;
+    @include flexDefoult(center, center, row);
+    .big_sale {
+      max-width: 1100px;
+      width: 80%;
+      .sale_textcontent {
+        font-size: 48px;
+      }
+      .timer {
+        @include flexDefoult(space-between, center, row);
+        margin-top: 48px;
+        .days,
+        .hours,
+        .minutes,
+        .seconds {
+          width: 20%;
+          height: 200px;
+          border-radius: 20px;
+          color: $main-background-color;
+          background-color: $frst-section-background;
+          text-align: center;
+          @include flexDefoult(center, center, column);
+          #day,
+          #hour,
+          #minute,
+          #second {
+            font-size: 65px;
+          }
+        }
+      }
+    }
+  }
+  #productList {
+    .product {
+      max-width: 1100px;
+
+      .products_description {
+        width: 40%;
+        @include flexDefoult(center, start, column);
+
+        h2 {
+          font-size: 40px;
+          font-weight: bold;
+        }
+        p {
+          margin: 32px 0px;
+        }
+        button {
+          width: 160px;
+          height: 48px;
+          background-color: $button-background;
+          color: $main-background-color;
+          border-radius: 5px;
+        }
+        @include responsive(tablet) {
+          width: 80%;
+          text-align: center;
+          align-items: center;
+        }
+      }
+    }
+    .product:nth-child(odd) {
+      display: flex;
+      flex-direction: row-reverse;
+      .products_description {
+        margin-left: 125px;
+      }
+      @include responsive(tablet) {
+        @include flexDefoult(center, center, column-reverse);
+        .products_description {
+          margin: 100px 0px;
+        }
+      }
+    }
+    .product:nth-child(even) {
+      display: flex;
+      flex-direction: row;
+      .products_description {
+        margin-right: 125px;
+      }
+      @include responsive(tablet) {
+        @include flexDefoult(center, center, column-reverse);
+        .products_description {
+          margin: 100px 0px;
+        }
+      }
+    }
+  }
+
   .page_moveing {
     width: 100px;
     margin: 100px 0px;
@@ -388,6 +390,125 @@ body {
     button {
       width: 32px;
       height: 32px;
+    }
+  }
+  .current_one {
+    width: 100%;
+    @include flexDefoult(center, center, column);
+    .go_back {
+      max-width: 1100px;
+      width: 80%;
+      margin: 70px 0px;
+      a {
+        text-align: start;
+      }
+    }
+    .short_description {
+      max-width: 1100px;
+      width: 80%;
+      background-color: $main-background-color;
+      @include flexDefoult(space-between, center, row);
+      @include responsive(tablet) {
+        img {
+          width: 280px;
+          height: 480px;
+        }
+      }
+      @include responsive(phone) {
+        flex-direction: column;
+        img {
+          height: 327px;
+          width: 327px;
+        }
+      }
+      .about_product {
+        width: 30%;
+        @include responsive(phone) {
+          width: 100%;
+        }
+        h2 {
+          font-size: 40px;
+          font-weight: bold;
+          margin: 32px 0px;
+        }
+        p {
+          margin: 32px 0px;
+        }
+        span {
+          font-weight: bold;
+        }
+        #buyProduct {
+          height: 40px;
+          width: 60%;
+          margin: 32px 0px;
+          @include flexDefoult(space-between, center, row);
+          #productQuantity {
+            @include flexDefoult(center, center, row);
+            width: 40%;
+            height: 100%;
+            background-color: $second-section-background;
+            margin: 32px 0px;
+            padding: 0px 5px;
+            button {
+              border: none;
+            }
+            #quantityInp {
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              border: none;
+              background-color: $second-section-background;
+            }
+          }
+          .add_to_cart {
+            width: 50%;
+            height: 100%;
+            button {
+              width: 100%;
+              height: 100%;
+              background-color: $button-background;
+              color: $main-background-color;
+              border-radius: 5px;
+              border: none;
+              &:hover {
+                background-color: $button-background-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .current_two {
+    width: 100%;
+    @include flexDefoult(center, center, column);
+    background-color: $main-background-color;
+    .product_features {
+      max-width: 1100px;
+      width: 80%;
+      margin: 70px 0px;
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 32px 0px;
+      }
+      .features {
+        width: 50%;
+      }
+    }
+  }
+  .current_three {
+    width: 100%;
+    @include flexDefoult(center, center, row);
+    .images {
+      max-width: 1100px;
+      width: 80%;
+      margin: 70px 0px;
+      @include flexDefoult(center, center, row);
+
+      #itemLeftImg {
+        @include flexDefoult(center, center, column);
+      }
     }
   }
 }
