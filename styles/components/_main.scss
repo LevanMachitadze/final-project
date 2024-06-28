@@ -494,6 +494,9 @@ body {
       }
       .features {
         width: 50%;
+        @include responsive(tablet) {
+          width: 100%;
+        }
       }
     }
   }
@@ -502,12 +505,34 @@ body {
     @include flexDefoult(center, center, row);
     .images {
       max-width: 1100px;
-      width: 80%;
+      width: 70%;
       margin: 70px 0px;
-      @include flexDefoult(center, center, row);
-
-      #itemLeftImg {
-        @include flexDefoult(center, center, column);
+      @include flexDefoult(space-between, center, row);
+      @include responsive(phone) {
+        height: 585px;
+        @include flexDefoult(space-between, center, column);
+      }
+      #itemLeftIMg {
+        @include flexDefoult(space-between, center, column);
+        @include responsive(tablet) {
+          height: 380px;
+          img {
+            width: 270px;
+            height: 180px;
+          }
+        }
+      }
+      #itemRightImg {
+        img {
+          @include responsive(tablet) {
+            width: 400px;
+            height: 380px;
+          }
+          @include responsive(phone) {
+            width: 270px;
+            height: 180px;
+          }
+        }
       }
     }
   }
