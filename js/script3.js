@@ -13,6 +13,16 @@ const itemRightImg = document.getElementById('itemRightImg');
 const firstCurrentImg = document.createElement('img');
 const secondCurrentImg = document.createElement('img');
 const thirdCurrentImg = document.createElement('img');
+const shoppingCartIcon = document.querySelector('.cart');
+const closeBtn = document.querySelector('.close-btn');
+
+shoppingCartIcon.addEventListener('click', () => {
+  document.querySelector('.popup').classList.toggle('show');
+});
+closeBtn.addEventListener('click', () => {
+  document.querySelector('.popup').classList.remove('show');
+});
+
 fetch('../product.json')
   .then((response) => response.json())
   .then((data) => {
@@ -30,4 +40,6 @@ fetch('../product.json')
     itemLeftIMg.appendChild(firstCurrentImg);
     itemLeftIMg.appendChild(secondCurrentImg);
     itemRightImg.appendChild(thirdCurrentImg);
+
+    data.forEach((product) => {});
   });

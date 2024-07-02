@@ -266,6 +266,25 @@ body header .underline {
   background-color: #979797;
   height: 1px;
 }
+body header .popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 2;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+body header .popup.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
 
 body {
   display: flex;
@@ -875,6 +894,11 @@ body .current_two .product_features h2 {
 body .current_two .product_features .features {
   width: 50%;
 }
+@media only screen and (max-width: 980px) {
+  body .current_two .product_features .features {
+    width: 100%;
+  }
+}
 body .current_three {
   width: 100%;
   display: flex;
@@ -884,18 +908,48 @@ body .current_three {
 }
 body .current_three .images {
   max-width: 1100px;
-  width: 80%;
+  width: 70%;
   margin: 70px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-body .current_three .images #itemLeftImg {
+@media only screen and (max-width: 426px) {
+  body .current_three .images {
+    height: 585px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+body .current_three .images #itemLeftIMg {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+@media only screen and (max-width: 980px) {
+  body .current_three .images #itemLeftIMg {
+    height: 380px;
+  }
+  body .current_three .images #itemLeftIMg img {
+    width: 270px;
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body .current_three .images #itemRightImg img {
+    width: 400px;
+    height: 380px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body .current_three .images #itemRightImg img {
+    width: 270px;
+    height: 180px;
+  }
 }
 
 footer {
