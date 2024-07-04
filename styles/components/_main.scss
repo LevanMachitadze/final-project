@@ -410,8 +410,8 @@ body {
       @include flexDefoult(space-between, center, row);
       @include responsive(tablet) {
         img {
-          width: 280px;
-          height: 480px;
+          width: 380px;
+          height: 420px;
         }
       }
       @include responsive(phone) {
@@ -505,17 +505,17 @@ body {
     @include flexDefoult(center, center, row);
     .images {
       max-width: 1100px;
-      width: 70%;
+      width: 80%;
       margin: 70px 0px;
       @include flexDefoult(space-between, center, row);
       @include responsive(phone) {
-        height: 585px;
+        height: 560px;
         @include flexDefoult(space-between, center, column);
       }
       #itemLeftIMg {
         @include flexDefoult(space-between, center, column);
         @include responsive(tablet) {
-          height: 380px;
+          height: 370px;
           img {
             width: 270px;
             height: 180px;
@@ -525,8 +525,8 @@ body {
       #itemRightImg {
         img {
           @include responsive(tablet) {
-            width: 400px;
-            height: 380px;
+            width: 300px;
+            height: 370px;
           }
           @include responsive(phone) {
             width: 270px;

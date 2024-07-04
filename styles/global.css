@@ -796,8 +796,8 @@ body .current_one .short_description {
 }
 @media only screen and (max-width: 980px) {
   body .current_one .short_description img {
-    width: 280px;
-    height: 480px;
+    width: 380px;
+    height: 420px;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -908,7 +908,7 @@ body .current_three {
 }
 body .current_three .images {
   max-width: 1100px;
-  width: 70%;
+  width: 80%;
   margin: 70px 0px;
   display: flex;
   justify-content: space-between;
@@ -917,7 +917,7 @@ body .current_three .images {
 }
 @media only screen and (max-width: 426px) {
   body .current_three .images {
-    height: 585px;
+    height: 560px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -932,7 +932,7 @@ body .current_three .images #itemLeftIMg {
 }
 @media only screen and (max-width: 980px) {
   body .current_three .images #itemLeftIMg {
-    height: 380px;
+    height: 370px;
   }
   body .current_three .images #itemLeftIMg img {
     width: 270px;
@@ -941,8 +941,8 @@ body .current_three .images #itemLeftIMg {
 }
 @media only screen and (max-width: 980px) {
   body .current_three .images #itemRightImg img {
-    width: 400px;
-    height: 380px;
+    width: 300px;
+    height: 370px;
   }
 }
 @media only screen and (max-width: 426px) {
